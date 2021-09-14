@@ -24,7 +24,7 @@ const without = function(source, itemsToRemove) {
     return final;
   } else {
     for (let i = 0; i < source.length; i++) {
-      if (source[i] !== itemsToRemove[i]) {
+      if (!itemsToRemove.includes(source[i])) {
         final.push(source[i]);
       }
     }

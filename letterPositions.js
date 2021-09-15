@@ -22,6 +22,7 @@ const assertArraysEqual = function(actual, expected) {
 
 const letterPositions = function(sentence) {
   const results = {};
+  sentence = sentence.toLowerCase();
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i]) {
       if (results[sentence[i]]) {
@@ -40,7 +41,7 @@ let result1 = letterPositions('hello');
 assertArraysEqual(result1['l'], [2, 3]);
 assertArraysEqual(result1['e'], [1]);
 
-let result2 = letterPositions('lighthouse in the house');
+let result2 = letterPositions('Lighthouse in the house');
 assertArraysEqual(result2['l'], [0]);
 assertArraysEqual(result2['h'], [3, 5, 15, 18]);
 assertArraysEqual(result2['e'], [9, 16, 22]);

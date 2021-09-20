@@ -1,5 +1,5 @@
 // Check if arrays are equal
-const eqArrays = require('./eqArrays');
+const eqArrays = require('../lotide/eqArrays');
 
 // Print result to console
 const assertArraysEqual = function(actual, expected) {

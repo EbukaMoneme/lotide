@@ -41,3 +41,5 @@ assertArraysEqual(double, [2, 4, 6, 8, 10, 12, 14, 16]);
 const words2 = ["ground", "control", "to", "major", "tom"];
 const results2 = map(words2, word => word.slice(2));
 assertArraysEqual(results2, ['ound', 'ntrol', '', 'jor', 'm']);
+
+module.exports = map;
